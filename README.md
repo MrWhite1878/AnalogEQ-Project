@@ -12,20 +12,12 @@ This repo serves to document relevant information on the design of an analog aud
 ---
 
 ### File Table of Contents
-**Source Files**
-* [PCB Files] - KiCad schematics and layouts
-* [Simulation Files] - LTspice simulation files
-**Manufacturing Package**
-* [Gerber & Drill Files] - Or equivalent manufacturing files
-* [Bill of Materials] - List of specific components and costs
-**Engineering & Design Documentation**
-* [Hardware Design] - Block diagrams, filter designs, and layout choices
-**Validation & Specifications**
-* [Hardware Verification and Results] - Testing methodology and measurements
-* [Datasheet] - User-friendly format of test result
-**Assembly & Use**
-* [Assembly Guide] - How to recreate at home
-* [User Manual] - How to operate it
+* [PCB Files](./pcb) - KiCad schematics and layouts
+* [Simulation Files](./sim) - LTspice simulation files
+* [Manufacturing Files](./fab) - Gerber/Drill files and BOM
+* [Hardware Design](./doc) - Block diagrams, filter designs, and layout choices
+* [Hardware Verification and Results](./sim) - Testing methodology, measurements, and datasheet
+* [Assembly and Use](./assembly) - How to create and use this at home
 
 # A Brief Project Timeline
 - Preliminary research on project ideas
