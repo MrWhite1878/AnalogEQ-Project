@@ -11,7 +11,7 @@ This repo serves to document relevant information on the design of an analog aud
 
 ---
 
-### File Table of Contents
+### Repo Table of Contents
 * [PCB Files](./pcb) - KiCad schematics and layouts
 * [Simulation Files](./sim) - LTspice simulation files
 * [Manufacturing Files](./fab) - Gerber/Drill files and BOM
@@ -19,9 +19,9 @@ This repo serves to document relevant information on the design of an analog aud
 * [Hardware Verification and Results](./sim) - Testing methodology, measurements, and datasheet
 * [Assembly and Use](./assembly) - How to create and use this at home
 
-# A Brief Project Timeline
-- Preliminary research on project ideas
-- Decision to pursue equilizer
-- Learning frequency-domain circuit analysis
-- Filter topolgy exploration
-- Repo Creation
+### A Brief Project Timeline
+* Preliminary research on project ideas
+* Decision to pursue equilizer
+* Learning frequency-domain circuit analysis
+* Filter topolgy exploration
+* Repo Creation
