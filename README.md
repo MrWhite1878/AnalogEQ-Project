@@ -4,10 +4,19 @@ This repo serves to document relevant information on the design of an analog aud
 > WARNING: This project is a work in progress.
 > Nothing is finalized, and this repo mainly serves to document and catalog my journey.
 
-### Minimum Target Specifications
-* 3.5mm TS (mono) audio input and output
-* Wall plug-in
-* Adjustable HPF, LPF, and peaking filter
+### Target Specifications
+*	3.5mm TS audio input and output
+*	±15V DC input
+*	Rotary switches for frequency adjustments, potentiometers for gain and Q
+*	2nd-order Butterworth HPF with adjustable cutoff (approx. 20Hz-120Hz)
+*	4th-order Butterworth LPF with fixed cutoff (approx. 20kHz)
+*	LF shelving with adjustable corner (approx. 35Hz-220Hz) and adjustable gain (approx. ±8dB)
+*	HF shelving with adjustable corner (approx. 8kHz-10kHz) and adjustable gain (approx. ±8dB)
+*	Low-mid peaking filter with adjustable center frequency (approx. 100Hz – 1kHz), adjustable Q (approx. 0.5 – 5), and adjustable gain (approx. ±8dB)
+*	High-mid peaking filter with adjustable center frequency (approx. 1kHz – 10kHz), adjustable Q (approx. 0.5 – 5), and adjustable gain (approx. ±8dB)
+*	Audio pass switch
+
+
 
 ---
 
