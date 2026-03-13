@@ -1,0 +1,30 @@
+LTspice 26.0.1 for Windows
+Circuit: C:\Users\Mike\Documents\AnalogEQ-Project\sim\HPF\hpf_real\hpf_real.net
+Start Time: Fri Mar 13 17:16:18 2026
+
+.step pos=0
+solver = Normal
+Maximum thread count: 20
+tnom = 27
+temp = 27
+method = trap
+Direct Newton iteration succeeded in finding operating point.
+
+.step pos=0.25
+Direct Newton iteration succeeded in finding operating point.
+
+.step pos=0.5
+Direct Newton iteration succeeded in finding operating point.
+
+.step pos=0.75
+Direct Newton iteration succeeded in finding operating point.
+
+.step pos=1
+Direct Newton iteration succeeded in finding operating point.
+Total elapsed time: 0.135 seconds.
+
+Files loaded:
+C:\Users\Mike\Documents\AnalogEQ-Project\sim\HPF\hpf_real\hpf_real.net
+C:\Users\Mike\AppData\Local\LTspice\lib\sub\opamp.sub
+C:\Users\Mike\AppData\Local\LTspice\lib\sub\TL072.301
+
