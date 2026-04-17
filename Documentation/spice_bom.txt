@@ -1,0 +1,54 @@
+2x NE5532
+4x TL072
+2x Bypass switch
+Power
+
+HPF
+3x 1uF
+1x 3kΩ
+1x 7.5kΩ
+1x 51kΩ
+
+LPF
+2x 10nF
+1x 680pF
+1x 1.1kΩ
+1x 1.2kΩ
+1x 2.7kΩ
+1x 3.9kΩ
+
+Notch
+3x 220nF
+1x 100kΩ
+1x 39kΩ
+1x 1kΩ
+1x 12kΩ
+1x 10kΩ pot LOG A
+1x 100Ω
+1x 10kΩ
+
+Shelf
+2x 100nF
+2x 15nF
+2x 10kΩ pot LIN B
+2x 1.8kΩ
+3x 1kΩ
+1x 12kΩ
+
+Middle1
+1x 10nF
+1x 47nF
+1x 10kΩ pot LIN B
+1x 100kΩ pot RLOG C
+1x 100kΩ pot RLOG C 2GANG
+1x 470Ω
+1x 1kΩ
+2x 2.2kΩ
+4x 4.7kΩ
+2x 6.8kΩ
+2x 12kΩ
+1x 100kΩ
+
+Middle 2 (same, except caps)
+1x 1nF
+1x 4.7nF

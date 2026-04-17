@@ -9,9 +9,7 @@ I want to design for:
 -Sweepable Notch filter for cleaning noise
 
 This exposes me to many different filter designs while being highly functional
----
-Power: This should only be used when it's near outlets, so it makes sense to have some sort of wall wart, clean up or modify the signal, and make power rails. 15dB is standard max boost. 15dB = 5.62x, so ±15V rails = ±13V output = 2.3V peak input. Seems reasonable. Batteries seems inconvenient and bulk, USB voltage levels considered, but I'm worried about signal integrity, noise, power drain, etc. Not interested in designing power solution right now. Ne5532 draws 8mA max per channel and the TL072B draws 2.5mA max per channel. Likely need a 1W supply.
---
+--- 
 Goal is low resistance, linear, single gang pots. Avoid rotary switches ($5-$10).
 Note that compromises made on freq range selection, as changing C in 1/2piRC only shifts the line up and down, not slope freq vs R loglog graphs.
 --

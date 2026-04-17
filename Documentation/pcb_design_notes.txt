@@ -1,0 +1,21 @@
+I learned KiCad and turned much of the simulation into a KiCad schematic with real components, footprints, MPNs, etc. I did not take any notes during this process, but I will include relevant information here.
+
+Changes to be made: Notch bypass, i/o amplification, diagnostic (smd?) leds, testing pads, replacing/removing 1uF caps (maybe), smd resistors (maybe)
+
+I want the final project to fit cleanly on my desk, in an enclosure. So, I planned for panel mount components (power, audio i/o, knobs). I plan to use JST-XH connectors for everything. I want a separate power board and signal board. I think about the size of notebook paper will do, so I'd like to keep the signal board within 200x100mm^2 and the power board within 100x50mm^2.
+
+Rough estimate 11 pots with 2 switches 30mm center-to-center is about 400mm Panel width or with 2 rows I could get that down to 210*60mm^2 width*height. I like that and I can keep the board 
+
+I decided on a definitive power solution. I do not want to juggle signal design with safety power design, so I will use a wall wart to step down the voltage from the wall to 12VAC. Then, I use a douglas design to double the voltage, rectify it, and pass it through LDOs. This produces extremely clean +-18V rails and avoids me having to worry about complicated power safety issues. The only problem is that with 43mA typ and 100mA max current draw from my op amp, I'll see significant drift from a standard wall wart (rated for about 1A), so I'll use a 9VAC wall wart.
+
+Since this is a stereo circuit, I'll just use each side of the op amp since crosstalk is pretty low. Also thinking of having the component value inside the courtyard and the name outside of the courtyard.
+
+Tried autorouting, kinda ugly. JLPCB has much better pricing than PCBWay based on testing. A little leeway in how I do it, but I should try to keep to standard stuff. TBH 2 Layer is cheaper but 4 layer might make cleaner routing isn;t much more expensive.
+
+I need to find ways to integrate debugging pads and workarounds if something doesn't go well.
+
+Components to buy that won't make it to the BOM:
+Power
+AC/AC Wall Wart - 77DA-12-09 by Ideal Power Ltd.
+Panel Mount Barrel Jack - PJ-009AH by Same Sky
+4x 100uF Caps - 

@@ -1,0 +1,37 @@
+*These are some notes I made to myself while simulating the signal processing circuits in LTspice. I added in a few things I learned during PCB design. Note this was before I made the decision to switch to stereo.*
+
+Sallen-Key vs. MFB
+sallen-key is non inverting, but comes back up high freq. sallen-key HPF, MFB LPF.
+
+Sallen-key HPF
+Goal is speaker protection and power reduction, not tone shaping. These are corrective devices like the notch. In modern systems, typically used for power reduction of sub bass freq and EMI removal. Don't want audio distortion, so cutoff freq will probably be beyond 20Hz/20kHz. Need butterworth for cleaner rolloff and phase shift isn't significant.
+
+Equal components vs unity gain. Probably unity gain for less distortion.
+Unity gain can be scaled with a and b, note this is from Wikipedia not the book.
+Maximize C1 and C2, but hard limit at 1u for price reasons. sets R1 and R2.
+Optimized for about -1dB at 20Hz, which shouldn't have a noticeable effect on audio. But, it will attenuate low freq signals.
+
+2nd,3rd,4th order. 2nd order is minimal design, typical. 3rd order only uses 1 more cap and 1 more resistor, not expensive. 4th order needs many more parts, and removes the possibility of a combined LPF/HPF. Potentially need to use TL072 on both stages? More parts means more noise. However, higher orders allow for attenuation. 3rd order filter makes sense to me. 1uF PP caps are massive though
+
+MFB LPF
+
+After some hiccups and a lot of math, 3rd order MFB inspired by the 3rd order sallen-key created. Solves all the issues with the sallen-key at HF. But this is best suited with a NE5532, so I may not be able to combine this with the HPF. Perhaps I'll find another stage to combine it with. 
+
+---
+Shelving
+
+two cap version better for correction than one cap version. I'm not picky about phase shift, and I think having an appropriate break is more important for LF than HF. Doing double cap configurations on both actually set 3dB freq I was happy with compared to what originally in the book. This is another inverting topology. 10K is not enough noise for me to try to adjust for low impedance issues. Freq shifts with cut/gain which is very nice.
+
+I should consider a switchable version of this with a middle control. Doesnt even have to be fully parametric
+---
+There's a lot of options for MIddle controls, probably because you can do some summing magic with bandpass filters. As a correctional device, I'm not interested in fixed freq devices. Wein network looks appealing for only using 1 op amp. Considering upgrading to stereo if I can get these designs to work. I'll have to decide how much I value the Q controllability to decide if I want fixed Q, switched Q, or fully variable Q. Compare my current bell to the book version. I like my fully parametric version, but I need to limit the ranges to 100-1k and 1k-10k so I can use smaller pots. Less noise and I can use the NE5532. Nvm main is a gain Q coupled circuit. Slightly modified Self's version (made R4 1K, lower impedance for more gain). This is good but the circuit is so sensitive to the gain/cut pos at the ends of the circuit. No idea how to fix tbh, even a buffer between the pot and r4 didn't do a ton. prolly need a lot of math to fix this.
+---
+Notch
+
+to get a tunable notch we can use the bridged differentiator in 6.10d. consider the boctor, inverted svf. Adjusted R5 for a sharper Q (10) with less cut (-27dB to -15dB) because it will make it less audible. No phase shift so I can use a bypass switch for when it's off. Shifted caps from douglas to shift freq ranges to 35-85 for better room control 
+---
+Combined
+
+There will both a bypass switch from input to output and a bypass across the notch. Have to use 2 channel op amps, so 2x NE5532, 4x TL072 = 52mA max draw? According to spice expecting a -90dB SNR
+
+ Considering a new power supply. Added input output buffers. I should also add clipping detectors, LEDs on bypass switches, rubber feet. Reconsider max/min gain / "Master gain control" or "Input attenuator", consider power indicator and enclosure markings. Probably waterslide decals.
