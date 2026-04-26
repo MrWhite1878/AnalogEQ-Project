@@ -1,0 +1,27 @@
+To-Do:
+1) Confirm simulation
+2) Confirm schematic matches simulation
+3) Pass ERC
+4) Confirm footprint physical specifications
+5) Confirm pinouts
+6) Confirm trace and via width
+7) Confirm trace spacing
+8) Print design and confirm component spacing
+9) Label polarities
+10) Label connectors, switches, and pots (including values when turned)
+11) Confirm mounting won't short traces
+12) Pass DRC
+13) Double check gerber files
+
+Order female sockets for mechanical components, ensure pin sizing.
+Buy mounting gear
+Add test points
+Place parts order before placing pcb order
+Maybe breadboard
+Total up price of at-home soldering (about $200, maybe $100) & decide if worth over lab, or another design studio (3 hour drive + 1 mistake costly)
+consider something like bnc adapter for dad3
+
+Changes:
+Updated the simulation with correct pots. 
+Changed the power supply design
+Ramifications: Update schematic, footprints, traces, etc. in kicad

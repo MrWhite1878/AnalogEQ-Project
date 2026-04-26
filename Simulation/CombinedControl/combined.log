@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\Users\Mike\Documents\AnalogEQ-Project\sim\CombinedControl\combined.net
-Start Time: Fri Apr 10 14:32:57 2026
+Circuit: C:\Users\Mike\Documents\AnalogEQ-Project\Simulation\CombinedControl\combined.net
+Start Time: Thu Apr 23 03:16:56 2026
 solver = Normal
 Maximum thread count: 20
 tnom = 27
@@ -13,10 +13,10 @@ Gmin stepping failed to find operating point. Use".option gminsteps=0" to skip a
 Starting source stepping with srcstepmethod=0
 Source stepping succeeded in finding the operating point.
 
-Total elapsed time: 6.028 seconds.
+Total elapsed time: 8.027 seconds.
 
 Files loaded:
-C:\Users\Mike\Documents\AnalogEQ-Project\sim\CombinedControl\combined.net
+C:\Users\Mike\Documents\AnalogEQ-Project\Simulation\CombinedControl\combined.net
 C:\Users\Mike\AppData\Local\LTspice\lib\sub\ne5532.txt
 C:\Users\Mike\AppData\Local\LTspice\lib\sub\TL072.301
 

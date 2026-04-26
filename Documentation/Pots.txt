@@ -1,0 +1,19 @@
+Pots
+
+2x 100kΩ pot RLOG C 4GANG - Bell Freq 1 & 2
+2x 100kΩ pot RLOG C 2GANG - Bell Q 1 & 2
+2x 10kΩ pot LIN B 2 GANG - Bell A 1 & 2
+2x 10kΩ pot LIN B 2 GANG - Shelf A B & T
+1x 10kΩ pot LOG A 2 GANG - Notch A
+
+Digikey (Knurled & Slotted, 15mm actuators, 6mm diameter, PC Pins)
+2x PTD904-2015K-C104
+2x PTD902-2015K-C104
+4x PTD902-2215K-B103
+1x PDB182-K415K-103A1
+Bypass
+2x SW-T2-4B-B-A2-MA2 ($1.41)
+
+tayda just doesn't have the same consistent selection, and with shipping I'm sure its about the same.
+
+78 pins. Individual connectors is no bueno. Ribbon cable is tempting, but crosstalk seems troublesome. Two sided board vs BTB connector sounds interesting. Could design it based on the footprint of the pcbs and see if I can go from there

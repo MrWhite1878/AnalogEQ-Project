@@ -1,6 +1,6 @@
 LTspice 26.0.1 for Windows
-Circuit: C:\Users\Mike\Documents\AnalogEQ-Project\sim\Power\acac_doubler.net
-Start Time: Tue Apr 14 23:57:40 2026
+Circuit: C:\Users\Mike\Documents\AnalogEQ-Project\Simulation\Power\acac_doubler.net
+Start Time: Thu Apr 23 02:49:17 2026
 solver = Normal
 Maximum thread count: 20
 tnom = 27
@@ -8,11 +8,11 @@ temp = 27
 method = trap
 .OP point found by inspection.
 .OP point found by inspection.
-Total elapsed time: 3.526 seconds.
+Total elapsed time: 3.031 seconds.
 
 Files loaded:
-C:\Users\Mike\Documents\AnalogEQ-Project\sim\Power\acac_doubler.net
+C:\Users\Mike\Documents\AnalogEQ-Project\Simulation\Power\acac_doubler.net
 C:\Users\Mike\AppData\Local\LTspice\lib\cmp\standard.dio
-C:\Users\Mike\Documents\AnalogEQ-Project\sim\Power\LM7818.txt
-C:\Users\Mike\Documents\AnalogEQ-Project\sim\Power\LM7918.txt
+C:\Users\Mike\Documents\AnalogEQ-Project\Simulation\Power\LM7818.txt
+C:\Users\Mike\Documents\AnalogEQ-Project\Simulation\Power\LM7918.txt
 

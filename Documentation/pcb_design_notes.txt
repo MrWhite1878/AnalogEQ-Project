@@ -19,3 +19,7 @@ Power
 AC/AC Wall Wart - 77DA-12-09 by Ideal Power Ltd.
 Panel Mount Barrel Jack - PJ-009AH by Same Sky
 4x 100uF Caps - 
+
+
+NOTE TO SELF:
+You need to document which components you chose and why you chose them. Need to use chassis ground properly for components. Think about enclosure.
